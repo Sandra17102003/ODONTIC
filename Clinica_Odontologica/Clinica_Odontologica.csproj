@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B0021FA-D411-46E7-9C8F-53AEA1312949}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Clinica_Odontologica</RootNamespace>
+    <AssemblyName>Clinica_Odontologica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\INSTALADOR\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-ES</TargetCulture>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FADD992E17B624B096BEE16FD6B21373F024867A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Clinica_Odontologica_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compras.Designer.cs">
+      <DependentUpon>compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_compras.Designer.cs">
+      <DependentUpon>informe_compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_empleados.Designer.cs">
+      <DependentUpon>informe_empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_pacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_pacientes.Designer.cs">
+      <DependentUpon>informe_pacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_productos.Designer.cs">
+      <DependentUpon>informe_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_proveedores.Designer.cs">
+      <DependentUpon>informe_proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_tratamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_tratamientos.Designer.cs">
+      <DependentUpon>informe_tratamientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informe_ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe_ventas.Designer.cs">
+      <DependentUpon>informe_ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdonticDataSet.cs">
+      <DependentUpon>OdonticDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OdonticDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OdonticDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pacientes.Designer.cs">
+      <DependentUpon>pacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores.Designer.cs">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tratamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tratamientos.Designer.cs">
+      <DependentUpon>tratamientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas.Designer.cs">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="compras.resx">
+      <DependentUpon>compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_compras.rdlc" />
+    <EmbeddedResource Include="informe_compras.resx">
+      <DependentUpon>informe_compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_empleados.rdlc" />
+    <EmbeddedResource Include="informe_empleados.resx">
+      <DependentUpon>informe_empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_pacientes.rdlc" />
+    <EmbeddedResource Include="informe_pacientes.resx">
+      <DependentUpon>informe_pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_productos.rdlc" />
+    <EmbeddedResource Include="informe_productos.resx">
+      <DependentUpon>informe_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_proveedores.rdlc" />
+    <EmbeddedResource Include="informe_proveedores.resx">
+      <DependentUpon>informe_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_tratamientos.rdlc" />
+    <EmbeddedResource Include="informe_tratamientos.resx">
+      <DependentUpon>informe_tratamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe_ventas.rdlc" />
+    <EmbeddedResource Include="informe_ventas.resx">
+      <DependentUpon>informe_ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pacientes.resx">
+      <DependentUpon>pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos.resx">
+      <DependentUpon>productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tratamientos.resx">
+      <DependentUpon>tratamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Clinica_Odontologica_TemporaryKey.pfx" />
+    <None Include="OdonticDataSet.xsc">
+      <DependentUpon>OdonticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OdonticDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OdonticDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OdonticDataSet.xss">
+      <DependentUpon>OdonticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Odontic.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Odontic_log.ldf">
+      <DependentUpon>Odontic.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
